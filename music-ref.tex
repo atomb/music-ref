@@ -1,6 +1,6 @@
 \documentclass{scrartcl}
 \usepackage{array}
-\usepackage[margin=0.5in]{geometry}
+\usepackage[letterpaper,margin=0.5in]{geometry}
 \usepackage{musixtex}
 \usepackage{xpiano}
 
@@ -35,20 +35,22 @@
 \begin{document}
 
 \begin{center}
-\begin{tabular}{lll|llllll|llm{0.8in}m{1.1in}}
-%\hline
-Major &   &   & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & Key        & Keyboard \\
-Minor & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 &   &   & Signature  &          \\
+\begin{tabular}{ll|llllll|llm{1in}m{1in}}
+\multicolumn{2}{l}{} & \multicolumn{10}{l}{Major} \\
+\cline{3-10}
+\multicolumn{2}{l|}{Minor} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & \multicolumn{1}{l|}{8} & Key & Keyboard \\
+\cline{1-10}
+\multicolumn{1}{|l}{1} & 2 & 3 & 4 & 5 & 6 & 7 & 8 & & & Signature & \\
 \hline
-      & A & B & C & D & E & F & G & A & B & C & \keysig{0} & \kb{C,D,E,F,G,A,B} \\
-      & E &\Fs& G & A & B & C & D & E &\Fs& G & \keysig{1} & \kb{C,D,E,Fs,G,A,B} \\
-      & B &\Cs& D & E &\Fs& G & A & B &\Cs& D & \keysig{2} & \kb{Cs,D,E,Fs,G,A,B} \\
-      &\Fs&\Gs& A & B &\Cs& D & E &\Fs&\Gs& A & \keysig{3} & \kb{Cs,D,E,Fs,Gs,A,B} \\
-      &\Cs&\Ds& E &\Fs&\Gs& A & B &\Cs&\Ds& E & \keysig{4} & \kb{Cs,Ds,E,Fs,Gs,A,B} \\
-      &\Gs&\As& B &\Cs&\Ds& E &\Fs&\Gs&\As& B & \keysig{5} & \kb{Cs,Ds,E,Fs,Gs,As,B} \\
+ A & B & C & D & E & F & G & A & B & C & \keysig{0} & \kb{C,D,E,F,G,A,B} \\
+ E &\Fs& G & A & B & C & D & E &\Fs& G & \keysig{1} & \kb{C,D,E,Fs,G,A,B} \\
+ B &\Cs& D & E &\Fs& G & A & B &\Cs& D & \keysig{2} & \kb{Cs,D,E,Fs,G,A,B} \\
+\Fs&\Gs& A & B &\Cs& D & E &\Fs&\Gs& A & \keysig{3} & \kb{Cs,D,E,Fs,Gs,A,B} \\
+\Cs&\Ds& E &\Fs&\Gs& A & B &\Cs&\Ds& E & \keysig{4} & \kb{Cs,Ds,E,Fs,Gs,A,B} \\
+\Gs&\As& B &\Cs&\Ds& E &\Fs&\Gs&\As& B & \keysig{5} & \kb{Cs,Ds,E,Fs,Gs,As,B} \\
 \hline
-      &\Ds&\Es&\Fs&\Gs&\As& B &\Cs&\Ds&\Es&\Fs& \keysig{6} & \kb{Cs,Ds,F,Fs,Gs,As,B} \\
-      &\As&\Bs&\Cs&\Ds&\Es&\Fs&\Gs&\As&\Bs&\Cs& \keysig{7} & \kb{C,Cs,Ds,F,Fs,Gs,As} \\
+\Ds&\Es&\Fs&\Gs&\As& B &\Cs&\Ds&\Es&\Fs& \keysig{6} & \kb{Cs,Ds,F,Fs,Gs,As,B} \\
+\As&\Bs&\Cs&\Ds&\Es&\Fs&\Gs&\As&\Bs&\Cs& \keysig{7} & \kb{C,Cs,Ds,F,Fs,Gs,As} \\
 %\hline
 \end{tabular}
 \end{center}
@@ -56,20 +58,22 @@ Minor & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 &   &   & Signature  &          \\
 \newpage
 
 \begin{center}
-\begin{tabular}{lll|llllll|llm{0.8in}m{1.1in}}
-%\hline
-Major &   &   & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & Key        & Keyboard \\
-Minor & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 &   &   & Signature  &          \\
+\begin{tabular}{ll|llllll|llm{1in}m{1in}}
+\multicolumn{2}{l}{} & \multicolumn{10}{l}{Major} \\
+\cline{3-10}
+\multicolumn{2}{l|}{Minor} &
+  1 & 2 & 3 & 4 & 5 & 6 & 7 & \multicolumn{1}{l|}{8} & Key & Keyboard \\
+\cline{1-10}
+\multicolumn{1}{|l}{1} & 2 & 3 & 4 & 5 & 6 & 7 & 8 & & & Signature  & \\
 \hline
-      & D & E & F & G & A &\Bb& C & D & E & F & \keysig{-1} & \kb{C,D,E,F,G,A,As} \\
-      & G & A &\Bb& C & D &\Eb& F & G & A &\Bb& \keysig{-2} & \kb{C,D,Ds,F,G,A,As} \\
-      & C & D &\Eb& F & G &\Ab&\Bb& C & D &\Eb& \keysig{-3} & \kb{C,D,Ds,F,G,Gs,As} \\
-      & F & G &\Ab&\Bb& C &\Db&\Eb& F & G &\Ab& \keysig{-4} & \kb{C,Cs,Ds,F,G,Gs,As} \\
-      &\Bb& C &\Db&\Eb& F &\Gb&\Ab&\Bb& C &\Db& \keysig{-5} & \kb{C,Cs,Ds,F,Fs,Gs,As} \\
+ D & E & F & G & A &\Bb& C & D & E & F & \keysig{-1} & \kb{C,D,E,F,G,A,As} \\
+ G & A &\Bb& C & D &\Eb& F & G & A &\Bb& \keysig{-2} & \kb{C,D,Ds,F,G,A,As} \\
+ C & D &\Eb& F & G &\Ab&\Bb& C & D &\Eb& \keysig{-3} & \kb{C,D,Ds,F,G,Gs,As} \\
+ F & G &\Ab&\Bb& C &\Db&\Eb& F & G &\Ab& \keysig{-4} & \kb{C,Cs,Ds,F,G,Gs,As} \\
+\Bb& C &\Db&\Eb& F &\Gb&\Ab&\Bb& C &\Db& \keysig{-5} & \kb{C,Cs,Ds,F,Fs,Gs,As} \\
 \hline
-      &\Eb& F &\Gb&\Ab&\Bb&\Cb&\Db&\Eb& F &\Gb& \keysig{-6} & \kb{Cs,Ds,F,Fs,Gs,As,B} \\
-      &\Ab&\Bb&\Cb&\Db&\Eb&\Fb&\Gb&\Ab&\Bb&\Cb& \keysig{-7} & \kb{Cs,Ds,E,Fs,Gs,As,B} \\
-%\hline
+\Eb& F &\Gb&\Ab&\Bb&\Cb&\Db&\Eb& F &\Gb& \keysig{-6} & \kb{Cs,Ds,F,Fs,Gs,As,B} \\
+\Ab&\Bb&\Cb&\Db&\Eb&\Fb&\Gb&\Ab&\Bb&\Cb& \keysig{-7} & \kb{Cs,Ds,E,Fs,Gs,As,B} \\
 \end{tabular}
 \end{center}
 
